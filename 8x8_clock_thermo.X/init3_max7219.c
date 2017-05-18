@@ -1,0 +1,30 @@
+#include "config.h"
+#include "send_spi_byte.h"
+
+/* initialise matrix 3 */
+void init3_max7219()
+{
+ CS = 0;
+ send_spi_byte (normal_operation_addr,normal_operation_data);//leave shutdown mode and enter normal                                                          //operation
+ send_no_op_spi_byte();
+ send_no_op_spi_byte();
+ CS = 1;
+
+ CS = 0;
+ send_spi_byte (display_intensity_addr,display_intensity_data);// minimum display intensity 1/32
+ send_no_op_spi_byte();
+ send_no_op_spi_byte();
+ CS = 1;
+
+ CS = 0;
+ send_spi_byte (decode_off_addr,decode_off_data); // decode mode off
+ send_no_op_spi_byte();
+ send_no_op_spi_byte();
+ CS = 1;
+
+ CS = 0;
+ send_spi_byte (scan_limit_addr,scan_limit_data); // scan limit = 8 digits multiplexed
+ send_no_op_spi_byte();
+ send_no_op_spi_byte();
+ CS = 1; // LOAD is high
+}

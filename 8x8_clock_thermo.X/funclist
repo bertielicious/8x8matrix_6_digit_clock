@@ -1,0 +1,21 @@
+_init_spi: CODE, 1320 0 16
+___awdiv: CODE, 763 0 91
+_tmr1On: CODE, 1400 0 8
+_init1_max7219: CODE, 1168 0 57
+___awmod: CODE, 1020 0 77
+_main: CODE, 854 0 89
+_init_ports: CODE, 1381 0 11
+_configTimer1: CODE, 1336 0 15
+_clear_display: CODE, 1097 0 71
+_init2_max7219: CODE, 943 0 77
+__initialization: CODE, 21 0 20
+_send_no_op_spi_byte: CODE, 1351 0 15
+_init3_max7219: CODE, 666 0 97
+_isr: CODE, 437 0 121
+i1_send_spi_byte: CODE, 1285 0 18
+_num_lookup: CODE, 558 0 108
+i1_send_no_op_spi_byte: CODE, 1366 0 15
+_split_digits: CODE, 298 0 139
+_send_spi_byte: CODE, 1265 0 20
+_updateDisplay: CODE, 45 0 253
+Total: 1318
